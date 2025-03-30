@@ -21,14 +21,15 @@ body {
 .code-block {
     color: #ffda38;
 }
-.code-block:first-child {
+.code-block>*:first-child {
     padding-left: 4em;
 }
-.code-block:last-child {
+.code-block>*:last-child {
     padding-left: 4em;
 }
-.code-block * {
+.code-block>* {
     text-indent: 4em;
+    padding-left: 4em;
 }
 
 .code-block .attribute {

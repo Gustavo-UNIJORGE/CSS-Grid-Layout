@@ -14,13 +14,17 @@
             Para aplicarmos o Layout CSS Grid basta usarmos 
         </p>
         <div class="code-block">
-            .grid { 
-                <span class="attribute">
-                    display<span class="comma-dot">:</span>
-                </span>
-                <span class="value">code<span class="comma-dot">;</span></span>
-            }
+            <span>.grid {</span> 
+                <div>
+
+                    <span class="attribute">
+                        display<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">code<span class="comma-dot">;</span></span>
+                </div>
+            <span>}</span>
         </div>
+        <div></div>
     </div>
     <div>
         <h2 class="code-heading">Grid Template Columns</h2>
@@ -60,7 +64,6 @@
             </ul>
             e definindo a quantidade de colunas pela repetição dos seus valores, podendo também ser usando a notação <code>repeat()</code>
         </p>
-        <div>
             <div class="code-block">
                 <span>.grid {</span> 
                 <div>
@@ -77,11 +80,11 @@
                 </div>
                 <span>}</span>
             </div>
+            <div class="note">
+                Observe que nesse exemplo usamos a medida <code>fr</code> que é uma unidade relativa exclusiva do Grid Layout, servindo para distribuir igualmente os itens no espaço disponível.
+            </div>
         </div>
         
-        <div class="note">
-            Observe que nesse exemplo usamos a medida <code>fr</code> que é uma unidade relativa exclusiva do Grid Layout, servindo para distribuir igualmente os itens no espaço disponível.
-        </div>
     </div>
 
     <ol class="example">
