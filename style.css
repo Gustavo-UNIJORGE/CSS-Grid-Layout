@@ -95,7 +95,13 @@ ol.example li *:not(h1, h2, h3){
 ol.example li .flex-example {
     display: block;
 }
-ol.example li .grid-example {
+ol.example#template-columns li .grid-example {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+ol.example#template-rows li .grid-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
