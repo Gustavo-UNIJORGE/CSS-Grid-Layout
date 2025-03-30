@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Usando CSS Grid</h1>
+    <div>
+        <h2 class="code-heading">Display</h2>
+        <p>
+            Para aplicarmos o Layout CSS Grid basta usarmos 
+        </p>
+        <div class="code-block">
+            .grid { 
+                <span class="attribute">
+                    display<span class="comma-dot">:</span>
+                </span>
+                <span class="value">code<span class="comma-dot">;</span></span>
+            }
+        </div>
+    </div>
+    <div>
+        <h2 class="code-heading">Grid Template Columns</h2>
+        <p>
+            A propriedade <code>grid-template-columns</code> serve para definir o número de colunas presente no container, podendo ser um valor fixo 
+            <ul>
+                <li>
+                    <code>px</code>(pixels),
+                </li>  
+                <li>
+                    <code>in</code>(polegadas),
+                </li>
+                <li>
+                    <code>cm</code>(centímetros)
+                </li>
+            </ul>
+            ou um valor relativo como :
+            <ul>
+                <li>
+                    <code>em</code>(relativo ao font-size)
+                </li>  
+                <li>
+                    <code>%</code>(porcentagem)
+                </li>
+                <li>
+                    <code>vw</code>(largura do viewport)
+                </li>
+                <li>
+                    <code>vh</code>(altura do viewport)
+                </li>
+                <li>
+                    <code>ch</code>(largura do "0" na fonte atual)
+                </li>
+                <li>
+                    <code>ex</code>(altura do "x" na fonte atual)
+                </li>
+            </ul>
+            e definindo a quantidade de colunas pela repetição dos seus valores, podendo também ser usando a notação <code>repeat()</code>
+        </p>
+        <div>
+            <div class="code-block">
+                <span>.grid {</span> 
+                <div>
+                    <span class="attribute">
+                        display<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">grid<span class="comma-dot">;</span></span>
+                </div>
+                <div>
+                    <span class="attribute">
+                        grid-template-columns<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1fr 1fr 1fr<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <div class="note">
+            Observe que nesse exemplo usamos a medida <code>fr</code> que é uma unidade relativa exclusiva do Grid Layout, servindo para distribuir igualmente os itens no espaço disponível.
+        </div>
+    </div>
+
+    <ol class="example">
+        <li>
+            <h3>Block</h3>
+            <div class="flex-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </li>
+        <li>
+            <h3>Grid</h3>
+            <div class="grid-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </li>
+    </ol>
+</body>
+</html>
