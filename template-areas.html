@@ -20,7 +20,7 @@
             <div class="code-block">
                 <span>.item-a {</span>
                 <div>
-                    grid-area: header;
+                    <span class="attribute">grid-area</span><span class="comma-dot">:</span> <span class="value">header</span><span class="comma-dot">;</span>
                 </div>
                 <span>}</span>
                 
@@ -28,7 +28,7 @@
 
                 <span>.item-b {</span>
                 <div>
-                    grid-area: main;
+                    <span class="attribute">grid-area</span><span class="comma-dot">:</span> <span class="value">main</span><span class="comma-dot">;</span>
                 </div>
                 <span>}</span>
                 
@@ -36,7 +36,7 @@
 
                 <span>.item-c {</span>
                     <div>
-                        grid-area: sidebar;
+                        <span class="attribute">grid-area</span><span class="comma-dot">:</span> <span class="value">sidebar</span><span class="comma-dot">;</span>
                     </div>
                 <span>}</span>
                 
@@ -44,7 +44,7 @@
 
                 <span>item-d {</span>
                     <div>
-                        grid-area: footer;
+                        <span class="attribute">grid-area</span><span class="comma-dot">:</span> <span class="value">footer</span><span class="comma-dot">;</span>
                     </div>
                 <span>}</span>
 
@@ -52,18 +52,18 @@
             
                 <span>.container {</span>
                     <div>
-                        display: grid;
+                        <span class="attribute">display</span><span class="comma-dot">:</span> <span class="value">grid</span><span class="comma-dot">;</span>
                     </div>
                     <div>
-                        grid-template-columns: 50px 50px 50px 50px;
+                        <span class="attribute">grid-template-columns</span><span class="comma-dot">:</span> <span class="value">50px 50px 50px 50px</span><span class="comma-dot">;</span>
                     </div>
                     <div>
-                        grid-template-rows: auto;
+                        <span class="attribute">grid-template-rows</span><span class="comma-dot">:</span> <span class="value">auto</span><span class="comma-dot">;</span>
                     </div>
                     <div>
-                        grid-template-areas: 
+                        <span class="attribute">grid-template-areas</span><span class="comma-dot">:</span> 
                     </div>
-                    <div>
+                    <div class="text-value">
                         <div>
                             "header header header header"
                         </div>
@@ -71,7 +71,7 @@
                             "main main . sidebar"
                         </div>    
                         <div>
-                            "footer footer footer footer";
+                            "footer footer footer footer"<span class="comma-dot">;</span>
                         </div>
                     </div>
                 <span>}</span>
@@ -86,9 +86,9 @@
         <button>
             <a href="template-rows.html">Anterior</a>
         </button>
-        <!--  <button >
-            <a href="template-areas.html">Próximo</a>
-        </button> -->
+         <button >
+            <a href="gap-columns.html">Próximo</a>
+        </button>
     </nav>
 </body>
 </html>

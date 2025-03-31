@@ -4,6 +4,7 @@
     --color-key-attr: #1bcae9;
     --color-key-value: #d63155;
     --color-key-comma: #adadad;
+    --color-key-text: #86df4c;
     --border-codeblock-radius: 16px;
 }
 
@@ -59,6 +60,11 @@ h2 {
 
 .code-block .value {
     color: var(--color-key-value);
+}
+
+.code-block .text-value {
+    color: var(--color-key-text); 
+    padding-left: calc(var(--indent) * 2);
 }
 
 .code-block .comma-dot {
