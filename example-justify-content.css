@@ -31,8 +31,6 @@ ol.example#justify-content li>.grid-example{
 
 ol.example#justify-content li>.grid-example:not(#stretch) {
   grid-template-columns: 96px 96px 96px;
-
-  justify-content: stretch;
 }
 
 ol.example#justify-content li>.grid-example#stretch{
