@@ -153,15 +153,16 @@ ol.example {
     justify-content: space-evenly;
 }
 
-ol.example li * {
-    text-align: center;
+ol.example li>*:not(.code-block)>*{
+    text-align: start;
+    color: var(--color-key-code);
+    background-color: var(--background-color-grey);
+    border: solid var(--background-color-blue) .25em;
 }
 
 ol.example li .flex-example {
     display: block;
-    border: solid var(--background-color-blue) .25em;
     border-radius: 16px;
-    background-color: var(--color-key-code);
 }
 
 ol.example li .grid-example {
@@ -169,9 +170,8 @@ ol.example li .grid-example {
 }
 
 ol.example li .grid-example>* {
-    border: solid var(--background-color-blue) .25em;
+    font-weight:bolder;
     border-radius: 16px;
-    background-color: var(--color-key-code);
 }
 
 ol.example#template-columns li .grid-example {

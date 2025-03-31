@@ -12,9 +12,7 @@ ol.example li * {
 
 ol.example li .flex-example {
   display: block;
-  border: solid var(--background-color-blue) .25em;
   border-radius: 16px;
-  background-color: var(--color-key-code);
 }
 
 ol.example li .grid-example {
@@ -22,9 +20,7 @@ ol.example li .grid-example {
 }
 
 ol.example li .grid-example>* {
-  border: solid var(--background-color-blue) .25em;
   border-radius: 16px;
-  background-color: var(--color-key-code);
 }
 
 ol.example li>.grid-example{
