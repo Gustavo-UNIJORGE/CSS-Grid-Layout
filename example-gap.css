@@ -1,0 +1,15 @@
+ol.example li>.grid-example {
+  display: grid;
+  width: 480px;
+  height: 480px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+ol.example li>.grid-example>*{
+  color: transparent;
+  text-align: center;
+  border: solid var(--background-color-blue) .25em;
+  border-radius: 16px;
+  background-color: var(--color-key-code);
+}

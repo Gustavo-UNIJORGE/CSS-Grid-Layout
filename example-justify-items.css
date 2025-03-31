@@ -1,0 +1,58 @@
+ol.example {
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+ol.example li * {
+  text-align: center;
+}
+
+ol.example li .flex-example {
+  display: block;
+  border: solid var(--background-color-blue) .25em;
+  border-radius: 16px;
+  background-color: var(--color-key-code);
+}
+
+ol.example li .grid-example {
+  display: grid;
+}
+
+ol.example li .grid-example>* {
+  border: solid var(--background-color-blue) .25em;
+  border-radius: 16px;
+  background-color: var(--color-key-code);
+}
+
+ol.example li>.grid-example{
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: dashed var(--color-key-attr) 8px;
+  border-radius: 16px
+}
+
+ol.example li>.grid-example:not(#stretch)>* {
+  width: 96px;
+  height: 96px;
+}
+
+ol.example li>.grid-example#start{
+  justify-items: start;
+}
+
+ol.example li>.grid-example#end{
+  justify-items: end;
+}
+
+ol.example li>.grid-example#center{
+  justify-items: center;
+}
+
+ol.example li>.grid-example#stretch{
+  justify-items: stretch;
+}
