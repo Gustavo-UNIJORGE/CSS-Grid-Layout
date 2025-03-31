@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Gap Rows</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../example-grid-auto.css">
+
+</head>
+<body>
+    <h1>Automatizando o Grid Layout</h1>
+    <main>
+        <h2 class="code-heading">Grid Row</h2>
+        
+        <p>
+            Com a propriedade <code>grid-row</code> definimos a linha de inicio e de final do item. É uma abreviação do <code>grid-row-start</code> + <code>grid-row-end</code>. 
+        </p>
+        <p>
+            A propriedade <code>grid-auto-columns</code> e <code>grid-auto-columns</code> também são conhecidas como <em>Implicity  Grid Tracks <b>(Trilhas de Grade Implicitas)</b></em> uma vez que é possível defini-las arbitrariamente sem o propriedade inicial de <code>grid-template-column</code> ou <code>grid-template-row</code>. 
+        </p>
+
+        <div>
+            <div class="code-block">
+                <span>.item-a {</span> 
+                <div>
+                    <span class="attribute">
+                        grid-row<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1 / 3<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+                <br>
+                <span>.item-b {</span> 
+                <div>
+                    <span class="attribute">
+                        grid-row<span class="comma-dot">:</span>
+                    </span> 
+                    <span class="value">2<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ul class="example" id="grid-row">
+            <li class="item-a">1</li>
+            <li>2</li>
+            <li class="item-b">3</li>
+        </ul>
+    </main>
+    <nav>
+        <button>
+            <a href="grid-column.html">Anterior</a>
+        </button>
+        <button>
+            <a href="grid-auto.html">Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>

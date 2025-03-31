@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Gap Rows</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../example-grid-auto.css">
+
+</head>
+<body>
+    <h1>Automatizando o Grid Layout</h1>
+    <main>
+        <div style="display: flex; flex-flow: row nowrap; justify-content: center;">
+            <h2 class="code-heading">Grid Auto Columns</h2>
+
+            <h2 class="code-heading">Grid Auto Rows</h2>
+        </div>
+        
+        <p>
+            Aqui definimos um tamanho fixo para todas as colunas ou linhas do container. 
+        </p>
+        <p>
+            A propriedade <code>grid-auto-columns</code> e <code>grid-auto-columns</code> também são conhecidas como <em>Implicity  Grid Tracks <b>(Trilhas de Grade Implicitas)</b></em> uma vez que é possível defini-las arbitrariamente sem o propriedade inicial de <code>grid-template-column</code> ou <code>grid-template-row</code>. 
+        </p>
+
+        <div>
+            <div class="code-block">
+                <span>.grid {</span> 
+                <div>
+                    <span class="attribute">
+                        grid-template-columns<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value"> 1fr 1fr 1fr 1fr<span class="comma-dot">;</span></span>
+                    
+                </div>
+                <div>
+                    <span class="attribute">
+                        grid-template-columns<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value"> auto auto auto<span class="comma-dot">;</span></span> 
+                </div>
+                <span>}</span>
+                
+                <br>
+
+                <span>.item-a {</span>
+                    <div>
+                        <span class="attribute">grid-row<span class="comma-dot">:</span></span>
+                        <span class="value">1</span>
+                    </div>
+                <div>
+                    <span class="attribute">grid-column<span class="comma-dot">:</span></span>
+                    <span class="value">1 / 3</span>
+                </div>
+                <span>}</span>
+
+                <br>
+                
+                <span>.item-b {</span>
+                    <div>
+                        <span class="attribute">grid-row<span class="comma-dot">:</span></span>
+                        <span class="value">2</span>
+                    </div>
+                <div>
+                    <span class="attribute">grid-column<span class="comma-dot">:</span></span>
+                    <span class="value">3 / -1</span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ul class="example" id="grid-auto">
+            <li class="item-a">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li class="item-b">5</li>
+            <li>6</li>
+        </ul>
+
+ <!--        <h2 class="code-heading">Grid Auto Flow</h2>
+        <p>
+            Com uma das propriedades acima atribuídas podemos definir a disposição dos items por meio da propriedade <code>grid-auto-flow</code>.
+        </p> -->
+    </main>
+    <nav>
+        <button>
+            <a href="grid-row.html">Anterior</a>
+        </button>
+       <button disabled>
+            <a>Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>

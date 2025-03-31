@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Gap Rows</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../example-grid-auto.css">
+
+</head>
+<body>
+    <h1>Automatizando o Grid Layout</h1>
+    <main>
+        <h2 class="code-heading">Grid Column</h2>
+        <p>
+            Com a propriedade <code>grid-column</code> definimos a linha de inicio e de final do item. É uma abreviação do <code>grid-column-start</code> + <code>grid-column-end</code>.
+        </p>
+        <div>
+            <div class="code-block">
+                <span>.item-a {</span> 
+                <div>
+                    <span class="attribute">
+                        grid-column<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1 / 4<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+                <br>
+                <span>.item-b {</span> 
+                <div>
+                    <span class="attribute">
+                        grid-column<span class="comma-dot">:</span>
+                    </span> 
+                    <span class="value">1 / 5<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ul class="example" id="grid-column">
+            <li class="item-a">1</li>
+            <li>2</li>
+            <li class="item-b">3</li>
+        </ul>
+    </main>
+    <nav>
+        <button>
+            <a href="/OrdenandoGridLayout/align-content.html">Anterior</a>
+        </button>
+        <button>
+            <a href="grid-row.html">Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>
