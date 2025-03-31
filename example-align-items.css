@@ -1,0 +1,59 @@
+ol.example {
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+ol.example li * {
+  text-align: center;
+}
+
+ol.example li .flex-example {
+  display: block;
+  border-radius: 16px;
+}
+
+ol.example li .grid-example {
+  display: grid;
+}
+
+ol.example li .grid-example>* {
+  border-radius: 16px;
+}
+
+ol.example#align-items li>.grid-example{
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: dashed var(--color-key-attr) 8px;
+  border-radius: 16px
+}
+
+ol.example#align-items li>.grid-example:not(#stretch)>* {
+  width: 96px;
+  height: 96px;
+}
+
+
+ol.example#align-items li>.grid-example:not(#stretch){
+  justify-items: center;
+}
+
+ol.example#align-items li>.grid-example#start{
+  align-items: start;
+}
+
+ol.example#align-items li>.grid-example#end{
+  align-items: end;
+}
+
+ol.example#align-items li>.grid-example#center{
+  align-items: center;
+}
+
+ol.example#align-items li>.grid-example#stretch{
+  align-items: stretch;
+}
