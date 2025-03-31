@@ -11,6 +11,7 @@
 }
 
 body {
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,6 +28,49 @@ h1 {
 h2 { 
     font-size: 4rem;
 }
+/* Navbar */
+ul.nav { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    background: #30334d;
+}
+
+ul.nav>li{
+    padding: 1em;
+    color: white;
+    font-size: 1.5ch;
+    text-align: center;
+}
+ul.nav>li:not(.active) {
+    cursor: pointer;
+}
+
+ul.nav>li.active {
+    font-weight: 800;
+    background-color: #4d565c;
+}
+
+ul.nav>li:first-child {
+    padding: 1em 2em;
+}
+ul.nav>li:hover:not(.active) {
+    color: #a6acaf;
+    background-color: #00000015;
+    font-weight: 700;
+}
+ul.nav>li>a {
+    text-decoration: none;
+    color: white;
+}
+ul.nav>li.active>a {
+    color: #adadad;
+    cursor: default;
+    pointer-events: none;
+}
+
 /* Codigos */
 .code-heading {
     font-family: "Consolas", Courier, monospace;
