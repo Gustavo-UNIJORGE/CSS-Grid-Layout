@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Column Gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estilizando o Grid</h1>
+    <main>
+
+        <h2 class="code-heading">Gap</h2>
+        <p>
+            Contudo, é possível definir os atributos de <code>column-gap</code> e <code>row-gap</code> em um único atributo, que é <code>gap</code>, antigamente conhecido como <code>gap</code>
+        </p>
+        <div>
+            <div class="code-block">
+                <span>.grid {</span> 
+                <div>
+                    <span class="attribute">
+                        gap<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1em 1em<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ol class="example" id="row-gap">
+            <li>
+                <h3>Sem Gap</h3>
+                <div class="grid-example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+            <li>
+                <h3>Com Gap</h3>
+                <div class="grid-example" style="gap: 1em;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <nav>
+        <button>
+            <a href="gap-rows.html">Anterior</a>
+        </button>
+        <button>
+            <a href="justify-items.html">Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>
