@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Column Gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estilizando o Grid</h1>
+    <main>
+
+        <h2 class="code-heading">Row Gap</h2>
+        <p>
+            A propriedade <code>row-gap</code> serve para definir o espaçamento entre as linhas presente no container, podendo ser um valor fixo ou flexível.
+        </p>
+        <p>
+            Essa propriedade também é conhecida como <code>grid-row-gap</code> mas provavelmente essa forma antiga de chamar a propriedade logo deve cair em desuso.
+        </p>
+
+        <div>
+            <div class="code-block">
+                <span>.grid {</span> 
+                <div>
+                    <span class="attribute">
+                        row-gap<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1em<span class="comma-dot">;</span></span>
+                </div>
+                <div>
+                    <span class="attribute">
+                        grid-row-gap<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1em<span class="comma-dot">;</span></span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ol class="example" id="row-gap">
+            <li>
+                <h3>Sem Gap</h3>
+                <div class="grid-example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+            <li>
+                <h3>Com Gap</h3>
+                <div class="grid-example" style="row-gap: 1em;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <nav>
+        <button>
+            <a href="template-areas.html">Anterior</a>
+        </button>
+        <button>
+            <a href="gap-rows.html">Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>
