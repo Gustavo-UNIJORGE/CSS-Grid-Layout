@@ -14,17 +14,15 @@
         <p>
             Contudo, é possível definir os atributos de <code>column-gap</code> e <code>row-gap</code> em um único atributo, que é <code>gap</code>, antigamente conhecido como <code>gap</code>
         </p>
-        <div>
-            <div class="code-block">
-                <span>.grid {</span> 
-                <div>
-                    <span class="attribute">
-                        gap<span class="comma-dot">:</span>
-                    </span>
-                    <span class="value">1em 1em<span class="comma-dot">;</span></span>
-                </div>
-                <span>}</span>
+        <div class="code-block">
+            <span>.grid {</span> 
+            <div>
+                <span class="attribute">
+                    gap<span class="comma-dot">:</span>
+                </span>
+                <span class="value">1em<span class="comma-dot"> <i>/*mesmo valor para gap-rows e para gap-columns*/</i>;</span></span>
             </div>
+            <span>}</span>
         </div>
         
         <ol class="example" id="column-gap">

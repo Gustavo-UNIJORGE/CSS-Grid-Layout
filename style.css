@@ -1,5 +1,6 @@
 :root { 
     --indent: 4em;
+    --border-codeblock-radius: 16px;
     --color-key-code: #ffda38;
     --color-key-attr: #1bcae9;
     --color-key-value: #d63155;
@@ -7,7 +8,6 @@
     --color-key-text: #86df4c;
     --background-color-blue: #30334d;
     --background-color-grey: #4d565c
-    --border-codeblock-radius: 16px;
 }
 
 body {
