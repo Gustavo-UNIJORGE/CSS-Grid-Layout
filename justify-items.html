@@ -3,51 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid - Gap</title>
+    <title>CSS Grid - Justify Items</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Estruturando o Grid Layout</h1>
+    <h1>Organizando o Grid Layout</h1>
     <main>
 
-        <h2 class="code-heading">Gap</h2>
+        <h2 class="code-heading">Justify Items</h2>
         <p>
-            Contudo, é possível definir os atributos de <code>column-gap</code> e <code>row-gap</code> em um único atributo, que é <code>gap</code>, antigamente conhecido como <code>gap</code>
+            A propriedade <code>justify-items</code> alinha os items do grid no eixo-x <i>(eixo de linha)</i> e é aplicada em todos os items do grid dentro do container.
         </p>
         <div>
             <div class="code-block">
                 <span>.grid {</span> 
                 <div>
                     <span class="attribute">
-                        gap<span class="comma-dot">:</span>
+                        justify-items<span class="comma-dot">:</span>
                     </span>
-                    <span class="value">1em 1em<span class="comma-dot">;</span></span>
+                    <span class="value">start | end | center | stretch<span class="comma-dot">;</span></span>
                 </div>
                 <span>}</span>
             </div>
         </div>
         
-        <ol class="example" id="row-gap">
+        <ol class="example" id="justify-items">
             <li>
-                <h3>Sem Gap</h3>
-                <div class="grid-example">
+                <div class="code-block inline">
+                    <span>.grid {</span><span class="attribute">justify-items<span class="comma-dot">:</span></span><span class="value">start<span class="comma-dot">;</span></span><span>}</span>
+                </div>
+                <div class="grid-example" id="start">
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
                     <div>4</div>
                     <div>5</div>
                     <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
                 </div>
             </li>
             <li>
-                <h3>Com Gap</h3>
-                <div class="grid-example" style="gap: 1em;">
+                <div class="code-block inline">
+                    <span>.grid {</span><span class="attribute">justify-items<span class="comma-dot">:</span></span><span class="value">end<span class="comma-dot">;</span></span><span>}</span>
+                </div>
+                <div class="grid-example" id="end">
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
                     <div>4</div>
                     <div>5</div>
                     <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </li>
+            <li>
+                <div class="code-block inline">
+                    <span>.grid {</span><span class="attribute">justify-items<span class="comma-dot">:</span></span><span class="value">center<span class="comma-dot">;</span></span><span>}</span>
+                </div>
+                <div class="grid-example" id="center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+            </li>
+            <li>
+                <div class="code-block inline">
+                    <span>.grid {</span><span class="attribute">justify-items<span class="comma-dot">:</span></span><span class="value">stretch<span class="comma-dot">;</span></span><span>}</span>
+                </div>
+                <div class="grid-example" id="stretch">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
                 </div>
             </li>
         </ol>
