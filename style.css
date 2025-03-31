@@ -30,6 +30,9 @@ h2 {
 }
 
 /* Navbar */
+/* TODO: mudar a hierarquia
+ * ul.nav>li -> .nav>a.nav-item 
+ */
 ul.nav { 
     list-style-type: none;
     margin: 0;
