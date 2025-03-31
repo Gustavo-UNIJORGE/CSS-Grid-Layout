@@ -1,0 +1,67 @@
+ol.example {
+    display: grid;
+}
+
+ol.example li * {
+    text-align: center;
+}
+
+ol.example#align-content li .flex-example {
+    display: block;
+    border-radius: 16px;
+}
+
+ol.example#align-content li .grid-example {
+    display: grid;
+}
+
+ol.example#align-content li .grid-example>* {
+    border-radius: 16px;
+}
+
+ol.example#align-content li>.grid-example{
+    display: grid;
+    height: 70vh;
+    /* grid-template-columns: 96px 96px 96px;
+    grid-template-rows: 96px 96px 96px; */
+    grid-template-columns: 12.5% 12.5% 12.5%;
+    justify-content: center;
+    grid-template-rows: 12.5% 12.5% 12.5%;
+    border: dashed var(--color-key-attr) 8px;
+    border-radius: 16px
+}
+
+/* ol.example#align-content li>.grid-example:not(#stretch)>* {
+    width: 96px;
+    height: 96px;
+    align-items: stretch;
+} */
+
+ol.example#align-content li>.grid-example#stretch{
+    align-content: stretch;
+}
+
+ol.example#align-content li>.grid-example#start{
+    align-content: start;
+}
+
+ol.example#align-content li>.grid-example#end{
+    align-content: end;
+}
+
+ol.example#align-content li>.grid-example#center{
+    align-content: center;
+}
+
+ol.example#align-content li>.grid-example#space-around{
+    align-content: space-around;
+}
+
+ol.example#align-content li>.grid-example#space-between{
+    align-content: space-between;
+}
+
+ol.example#align-content li>.grid-example#space-evenly{
+    align-content: space-evenly;
+}
+
