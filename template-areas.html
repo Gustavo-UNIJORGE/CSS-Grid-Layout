@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Template Areas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Usando CSS Grid</h1>
+    <main>
+        <h2 class="code-heading">Grid Template Areas</h2>
+        <p>
+            A propriedade <code>grid-template-aras</code> define um template de grade usando referencias nominais (de nome) para a disposição de areas nas linhas e colunas definidas anteriormente. 
+        </p>
+        <p>
+            Os itens são atribuídos pelos nomes da grid area.
+        </p>
+        <div>
+            <div class="code-block">
+                <span>.item-a {</span>
+                <div>
+                    grid-area: header;
+                </div>
+                <span>}</span>
+                
+                <br>
+
+                <span>.item-b {</span>
+                <div>
+                    grid-area: main;
+                </div>
+                <span>}</span>
+                
+                <br>
+
+                <span>.item-c {</span>
+                    <div>
+                        grid-area: sidebar;
+                    </div>
+                <span>}</span>
+                
+                <br>
+
+                <span>item-d {</span>
+                    <div>
+                        grid-area: footer;
+                    </div>
+                <span>}</span>
+
+                <br>
+            
+                <span>.container {</span>
+                    <div>
+                        display: grid;
+                    </div>
+                    <div>
+                        grid-template-columns: 50px 50px 50px 50px;
+                    </div>
+                    <div>
+                        grid-template-rows: auto;
+                    </div>
+                    <div>
+                        grid-template-areas: 
+                    </div>
+                    <div>
+                        <div>
+                            "header header header header"
+                        </div>
+                        <div>
+                            "main main . sidebar"
+                        </div>    
+                        <div>
+                            "footer footer footer footer";
+                        </div>
+                    </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ol class="example" id="template-areas">
+            
+        </ol>
+    </main>
+    <nav>
+        <button>
+            <a href="template-rows.html">Anterior</a>
+        </button>
+        <!--  <button >
+            <a href="template-areas.html">Próximo</a>
+        </button> -->
+    </nav>
+</body>
+</html>

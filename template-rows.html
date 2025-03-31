@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Template Rows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Usando CSS Grid</h1>
+    <main>
+        <h2 class="code-heading">Grid Template Rows</h2>
+        <p>
+            Semelhante a propriedade <code>grid-template-columns</code>, a <code>grid-template-rows</code> serva para definir a estrutura do container a partir do número de linhas sendo um valor fixo ou flexível.
+        </p>
+        <div>
+            <div class="code-block">
+                <span>.grid {</span> 
+                <div>
+                    <span class="attribute">
+                        display<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">grid<span class="comma-dot">;</span></span>
+                </div>
+                <div>
+                    <span class="attribute">
+                        grid-template-columns<span class="comma-dot">:</span>
+                    </span>
+                    
+                    <span class="value">1fr 1fr<span class="comma-dot">;</span></span>
+                    
+                </div>
+                <div>
+                    <span class="attribute">
+                        grid-template-rows<span class="comma-dot">:</span>
+                    </span>
+                    <span class="value">1fr 1fr 1fr<span class="comma-dot">;</span>
+                    </span>
+                </div>
+                <span>}</span>
+            </div>
+        </div>
+        
+        <ol class="example" id="template-rows">
+            <li>
+                <h3>Block</h3>
+                <div class="flex-example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+            <li>
+                <h3>Grid</h3>
+                <div class="grid-example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <nav>
+        <button>
+            <a href="template-columns.html">Anterior</a>
+        </button>
+        <button>
+            <a href="template-areas.html">Próximo</a>
+        </button>
+    </nav>
+</body>
+</html>
